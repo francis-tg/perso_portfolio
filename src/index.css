@@ -3,3 +3,29 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.bg-img{
+    background: linear-gradient(to bottom, #85680c98, #8a6a029c), url(./img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.title-style::after,.title-style::before{
+    content: "";
+    border: 3px solid #775d07;
+    position: absolute; 
+    width: 50%;
+    transform: rotateX(35deg);
+    top: 50%;
+    
+}
+.title-style::before{
+    left: -60px;
+}
+.title-style::after{
+    right:-60px;
+}
+
+.title-style{
+    position: relative;
+}
