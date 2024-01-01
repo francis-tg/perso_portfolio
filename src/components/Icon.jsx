@@ -10,7 +10,10 @@ const Icon = ({ icon, ...props }) => {
 			`Fa${String(icon).at(0).toUpperCase()}${String(icon)
 				.slice(1, String(icon).length)
 				.toLocaleLowerCase()}`
-		] || null;
+		] ||
+		(String(icon).match("JavaScript") && ReactIcons["FaJs"]) ||
+		(String(icon).includes("CSS") && ReactIcons["FaCss3"]) ||
+		(String(icon).includes("HTML") && ReactIcons["FaHtml5"]);
 
 	return ChosenIcon ? <ChosenIcon {...props} /> : null;
 };

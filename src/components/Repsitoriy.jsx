@@ -5,7 +5,10 @@ import Icon from "./Icon";
 function Repsitoriy({ repositorie }) {
 	return (
 		<div className='border border-yellow-500 rounded p-5'>
-			<h1 className='text-lg font-bold'>{repositorie?.name}</h1>
+			<div>
+				<h1 className='text-lg font-bold'>{repositorie?.name}</h1>
+				<p>{String(repositorie?.description ?? "").substring(0, 100) || ""}</p>
+			</div>
 			<div className='flex justify-between'>
 				<div></div>
 				<div className='flex items-center gap-2'>
