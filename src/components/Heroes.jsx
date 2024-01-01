@@ -1,5 +1,4 @@
 import React from "react";
-import PersoImg from "../img/perso.png";
 import {
 	FaHtml5,
 	FaCss3,
@@ -8,15 +7,20 @@ import {
 	FaPython,
 	FaPhp,
 } from "react-icons/fa6";
+
 function Heroes() {
 	return (
 		<div className='h-screen flex justify-center items-center bg-img'>
-			<div className='flex justify-center flex-col  items-center w-[75%] p-10 h-screen gap-10 '>
-				<div className='px-8 text-center'>
-					<h1 className='text-5xl font-bold mb-3 flex-none'>
+			<div className='flex justify-center flex-col items-center w-full md:w-[75%] p-5 md:p-10 h-screen gap-5 md:gap-10'>
+				<div className='px-4 md:px-8 text-center'>
+					<h1
+						className='text-3xl md:text-5xl font-bold mb-3 '
+						data-aos='slide-up'>
 						Bonjour ! Je suis Francis, développeur passionné.
 					</h1>
-					<p className='text-xl mb-5'>
+					<p
+						className='text-lg md:text-xl mb-5'
+						data-aos='slide-up'>
 						Mon portfolio est le résultat de ma passion pour le développement
 						web et l'ingénierie logicielle. Expert en JavaScript, HTML, CSS et
 						divers frameworks, je crée des solutions innovantes et esthétiques.
@@ -34,7 +38,9 @@ function Heroes() {
 						pour découvrir mon approche du développement logiciel. Je suis
 						ouvert aux collaborations et aux nouvelles opportunités.
 					</p>
-					<div className='mt-3 flex gap-3 items-center justify-center'>
+					<div
+						className='mt-3 flex flex-wrap justify-center gap-3 items-center'
+						data-aos='slide-up'>
 						<FaHtml5 size={40} />
 						<FaCss3 size={40} />
 						<FaJs size={40} />
@@ -43,7 +49,7 @@ function Heroes() {
 						<FaSass size={40} />
 					</div>
 				</div>
-				<div>
+				<div data-aos='slide-up'>
 					<button className='bg-yellow-500 border border-yellow-500 rounded-lg p-2'>
 						Télécharger mon CV
 					</button>
